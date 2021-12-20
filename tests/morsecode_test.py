@@ -13,7 +13,6 @@ import morsecode
 )
 def test_encode(string: str, output: str) -> None:
     """Tests encoding from text to morse code"""
-
     assert morsecode.encode(string) == output
 
 
@@ -27,5 +26,4 @@ def test_encode(string: str, output: str) -> None:
 )
 def test_decode(string: str, output: str) -> None:
     """Tests encoding from text to morse code"""
-
     assert morsecode.decode(string) == output
