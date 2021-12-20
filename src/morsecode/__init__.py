@@ -65,15 +65,10 @@ REVERSE_MAPPING = {value: key for key, value in MORSE_MAPPING.items()}
 
 def encode(string: str) -> str:
     """Convert a string to morse code."""
-    try:
-        return " ".join(MORSE_MAPPING[char] for char in string)
-    except KeyError:
-        raise ValueError("Unknown characters found in string.")
+    string = string.upper()
+    return " ".join(MORSE_MAPPING[char] for char in string if char in MORSE_MAPPING)
 
 
 def decode(string: str) -> str:
     """Convert morse code to string."""
-    try:
-        return "".join(REVERSE_MAPPING[code] for code in string.split())
-    except KeyError:
-        raise ValueError("Unknown morse code found in string.")
+    return "".join(REVERSE_MAPPING.get(code, "") for code in string.split())

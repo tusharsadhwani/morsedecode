@@ -7,7 +7,8 @@ import morsecode
     ("string", "output"),
     (
         ("SOS", "... --- ..."),
-        ("OH, HI MARK!", "--- .... --..-- / .... .. / -- .- .-. -.- -.-.--"),
+        ("Oh, hi Mark!", "--- .... --..-- / .... .. / -- .- .-. -.- -.-.--"),
+        ("A*b", ".- -..."),
     ),
 )
 def test_encode(string: str, output: str) -> None:
@@ -21,6 +22,7 @@ def test_encode(string: str, output: str) -> None:
     (
         ("... --- ...", "SOS"),
         ("--- .... --..-- / .... .. / -- .- .-. -.- -.-.--", "OH, HI MARK!"),
+        ("test .- bruh -...", "AB"),
     ),
 )
 def test_decode(string: str, output: str) -> None:
