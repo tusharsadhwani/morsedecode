@@ -1,6 +1,6 @@
 import pytest
 
-import morsecode
+import morsedecode
 
 
 @pytest.mark.parametrize(
@@ -13,7 +13,7 @@ import morsecode
 )
 def test_encode(string: str, output: str) -> None:
     """Tests encoding from text to morse code"""
-    assert morsecode.encode(string) == output
+    assert morsedecode.encode(string) == output
 
 
 @pytest.mark.parametrize(
@@ -26,4 +26,4 @@ def test_encode(string: str, output: str) -> None:
 )
 def test_decode(string: str, output: str) -> None:
     """Tests encoding from text to morse code"""
-    assert morsecode.decode(string) == output
+    assert morsedecode.decode(string) == output

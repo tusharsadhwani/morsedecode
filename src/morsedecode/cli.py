@@ -1,6 +1,6 @@
 import sys
 
-import morsecode
+import morsedecode
 
 
 def encode() -> None:
@@ -11,7 +11,7 @@ def encode() -> None:
         sys.exit(1)
 
     text = " ".join(data)
-    print(morsecode.encode(text))
+    print(morsedecode.encode(text))
 
 
 def decode() -> None:
@@ -22,4 +22,4 @@ def decode() -> None:
         sys.exit(1)
 
     text = " ".join(data)
-    print(morsecode.decode(text))
+    print(morsedecode.decode(text))

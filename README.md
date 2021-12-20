@@ -1,4 +1,4 @@
-# morsecode
+# morsedecode
 
 A morse code encoder and decoder utility.
 
@@ -7,13 +7,13 @@ A morse code encoder and decoder utility.
 Install it via pip:
 
 ```console
-pip install morsecode
+pip install morsedecode
 ```
 
 Alternatively, you can use `pipx` to run it without installing:
 
 ```console
-pipx run morsecode Hi!
+pipx run morsedecode .... .. -.-.--
 ```
 
 ## Usage
