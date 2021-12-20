@@ -72,3 +72,7 @@ def encode(string: str) -> str:
 def decode(string: str) -> str:
     """Convert morse code to string."""
     return "".join(REVERSE_MAPPING.get(code, "") for code in string.split())
+
+
+if __name__ == "__main__":
+    print(encode("Hello!"))
