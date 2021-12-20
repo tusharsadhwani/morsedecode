@@ -1,5 +1,3 @@
-from morsecode import encode
-
 import pytest
 
 import morsecode
