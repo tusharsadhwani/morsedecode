@@ -18,7 +18,7 @@ def decode() -> None:
     """CLI utility to convert morse code to text."""
     data = sys.argv[1:]
     if not data:
-        print("Usage: morsedecode --- .... / .... .. -.-.--")
+        print("Usage: morsedecode -- .... . . -.. . -.. ---", file=sys.stderr)
         sys.exit(1)
 
     text = " ".join(data)
